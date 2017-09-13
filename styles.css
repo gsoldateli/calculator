@@ -22,11 +22,16 @@ body {
 	border-radius: 20px;
 	padding: 40px 30px 30px 30px;
 	border: solid 1px #848484;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#828282+0,ffffff+100&1+0,0.63+100 */
+	
+
 	background: -moz-linear-gradient(top, rgba(130,130,130,1) 0%, rgba(255,255,255,0.63) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(130,130,130,1) 0%,rgba(255,255,255,0.63) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(130,130,130,1) 0%,rgba(255,255,255,0.63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828282', endColorstr='#a1ffffff',GradientType=0 ); /* IE6-9 */
+
+	-webkit-box-shadow: 0px 10px 40px -4px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 10px 40px -4px rgba(0,0,0,1);
+	box-shadow: 0px 10px 40px -4px rgba(0,0,0,1);
 }
 
 .calculator-container:after {
@@ -45,6 +50,11 @@ body {
     box-sizing: border-box;
     border-radius: 8px;
     margin-bottom: 1rem;
+
+
+
+
+    
 }
 
 .numeric-pad {
