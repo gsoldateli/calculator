@@ -1,0 +1,124 @@
+html {
+	font-size: 16px;
+	font-family: Verdana, sans-serif;
+
+}
+
+body {
+	background-color: #A5D7DF;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.right {
+	float: right;
+}
+
+.calculator-container {
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 40px 30px 30px 30px;
+	border: solid 1px #848484;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#828282+0,ffffff+100&1+0,0.63+100 */
+	background: -moz-linear-gradient(top, rgba(130,130,130,1) 0%, rgba(255,255,255,0.63) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(130,130,130,1) 0%,rgba(255,255,255,0.63) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(130,130,130,1) 0%,rgba(255,255,255,0.63) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#828282', endColorstr='#a1ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.calculator-container:after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+.calculator-screen {
+    background-color: rgb(197, 216, 216);
+    width: 100%;
+    font-size: 2.5rem;
+    border: 2px solid #656767;
+    text-align: right;
+    padding: 16px 12px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.numeric-pad {
+	float: left;
+	width: 80%;
+}
+
+.operation-pad {
+	float: right;
+	width: 20%;
+}
+.button {
+	cursor: pointer;
+	box-sizing: border-box;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 20px;
+	float: left;
+	background-color: #ccc;
+	text-align: center;
+	border-radius: 4px;
+	margin-right: 10px;
+	margin-bottom: 10px;	
+	background-color: #404757;
+	color: #fff;
+
+	-webkit-box-shadow: 3px 3px 8px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 8px -2px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 8px -2px rgba(0,0,0,0.75);
+
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;	
+}
+
+.button:hover {
+	transform: scale(1.05);
+}
+
+.button:active {
+	box-shadow: 3px 3px 8px -2px rgba(0,0,0,0.45);
+	background-color: #626c82;
+	transform: scale(1);
+}
+
+
+
+.numeric-pad > .button {
+	width: 30%;
+
+}
+
+.operation-pad > .button {
+	width: 100%;
+}
+
+.clear-pad > .button {
+	width: 48.5%;
+	background-color: #0c7384;
+}
+
+.clear-pad > .button:active {
+	background-color: #0c5a67;
+}
+	
+.clear-pad > .button.right {
+	margin-right: 0;
+	float: right;
+}
+
+@media screen and (max-width: 471px) {
+	.button {
+	    margin-right: 5px;
+    	margin-bottom: 5px;
+	}
+}
