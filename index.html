@@ -13,7 +13,7 @@
 			Project created based on the design of this <a href="https://dribbble.com/shots/3798602-calculator" target="_BLANK">calculator</a>
 		</h1>
 		<div class="calculator-container">
-			<input type="text" class="calculator-screen" value="123456.000">
+			<input id="display" type="text" class="calculator-screen" disabled value="123456.000">
 			<div class="buttons-container">
 				<div class="numeric-pad">
 					<span class="button">1</span>
@@ -27,7 +27,7 @@
 					<span class="button">9</span>
 					<span class="button">0</span>					
 					<span class="button">.</span>					
-					<span class="button">=</span>					
+					<span class="button" onclick="calc.equals();">=</span>					
 				</div>
 				<div class="operation-pad">
 					<span class="button">&divide;</span>					
@@ -36,15 +36,17 @@
 					<span class="button">+</span>										
 				</div>
 				<div class="clear-pad">
-					<div class="button">
+					<div class="button" onclick="calc.clear();">
 						CLEAR
 					</div>
-					<div class="button right">
+					<div class="button right" onclick="calc.del();">
 						DEL
 					</div>					
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<script src="script.js"> </script>
 </body>
 </html>
