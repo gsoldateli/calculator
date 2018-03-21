@@ -6,34 +6,34 @@
 	<title>The Calculator Project</title>
 </head>
 <body>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="dist/css/style.min.css">
 
 	<div class="container">
 		<h1>
 			Project created based on the design of this <a href="https://dribbble.com/shots/3798602-calculator" target="_BLANK">calculator</a>
 		</h1>
 		<div class="calculator-container">
-			<input id="display" type="text" class="calculator-screen" disabled value="123456.000">
+			<input id="display" type="text" class="calculator-screen" disabled value="">
 			<div class="buttons-container">
 				<div class="numeric-pad">
-					<span class="button">1</span>
-					<span class="button">2</span>
-					<span class="button">3</span>
-					<span class="button">4</span>
-					<span class="button">5</span>
-					<span class="button">6</span>
-					<span class="button">7</span>
-					<span class="button">8</span>
-					<span class="button">9</span>
-					<span class="button">0</span>					
-					<span class="button">.</span>					
+					<span data-value="1" class="button">1</span>
+					<span data-value="2" class="button">2</span>
+					<span data-value="3" class="button">3</span>
+					<span data-value="4" class="button">4</span>
+					<span data-value="5" class="button">5</span>
+					<span data-value="6" class="button">6</span>
+					<span data-value="7" class="button">7</span>
+					<span data-value="8" class="button">8</span>
+					<span data-value="9" class="button">9</span>
+					<span data-value="0" class="button">0</span>					
+					<span data-value="." class="button">.</span>					
 					<span class="button" onclick="calc.equals();">=</span>					
 				</div>
 				<div class="operation-pad">
-					<span class="button">&divide;</span>					
-					<span class="button">X</span>										
-					<span class="button">-</span>										
-					<span class="button">+</span>										
+					<span data-value=" / " class="button">&divide;</span>					
+					<span data-value=" * " class="button">X</span>										
+					<span data-value=" - " class="button">-</span>										
+					<span data-value=" + " class="button">+</span>										
 				</div>
 				<div class="clear-pad">
 					<div class="button" onclick="calc.clear();">
@@ -47,6 +47,6 @@
 		</div>
 	</div>
 
-	<script src="script.js"> </script>
+	<script src="dist/js/script.min.js"> </script>
 </body>
 </html>
